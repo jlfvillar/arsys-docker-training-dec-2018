@@ -9,3 +9,5 @@ RUN echo '<marquee>Test number one</marquee>' \
 RUN ls
 
 EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
