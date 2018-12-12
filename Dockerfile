@@ -10,5 +10,4 @@ RUN ls
 
 EXPOSE 80
 
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
-CMD ["-h"]
+WORKDIR /etc
