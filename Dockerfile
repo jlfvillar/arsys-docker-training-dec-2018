@@ -12,6 +12,7 @@ RUN echo '<marquee>Test number one</marquee>' \
 
 EXPOSE 80
 
-VOLUME [ "/arsys-data" ]
+COPY ./sayhello.sh /
+RUN chmod o+x ./sayhello.sh
 
-USER pepito
+CMD ["./sayhello.sh"]
